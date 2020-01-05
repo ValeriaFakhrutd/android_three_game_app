@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlackjackGame.activities.MultiplayerEndGameActivity">
+
+    <TextView
+        android:id="@+id/player1LongestStreakLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/longest_streak_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/winRateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/winRateLabel" />
+
+    <TextView
+        android:id="@+id/blackjackMultiplayerEndTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014"
+        tools:text="@string/blackjackMultiplayerEndTitle" />
+
+    <TextView
+        android:id="@+id/player1StatsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackjackMultiplayerEndTitle"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <TextView
+        android:id="@+id/player2StatsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/player1StatsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player1StatsLabel" />
+
+    <TextView
+        android:id="@+id/winRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/win_rate_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/player1StatsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player1StatsLabel" />
+
+    <TextView
+        android:id="@+id/player2WinRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/win_rate_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/player1LongestStreakLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player2StatsLabel" />
+
+    <TextView
+        android:id="@+id/player2LongestStreakLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/longest_streak_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/player2WinRateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/player2WinRateLabel" />
+
+    <TextView
+        android:id="@+id/player1WinRateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/winRateLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/winRateLabel" />
+
+    <TextView
+        android:id="@+id/player1LongestStreakDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/player1LongestStreakLabel"
+        app:layout_constraintEnd_toEndOf="@+id/player1WinRateDisplay"
+        app:layout_constraintTop_toTopOf="@+id/player1LongestStreakLabel" />
+
+    <TextView
+        android:id="@+id/player2WinRateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/player2WinRateLabel"
+        app:layout_constraintEnd_toEndOf="@+id/player1LongestStreakDisplay"
+        app:layout_constraintTop_toTopOf="@+id/player2WinRateLabel" />
+
+    <TextView
+        android:id="@+id/player2LongestStreakDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/player2LongestStreakLabel"
+        app:layout_constraintEnd_toEndOf="@+id/player2WinRateDisplay"
+        app:layout_constraintTop_toTopOf="@+id/player2LongestStreakLabel" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mainMenu"
+        android:text="@string/main_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <TextView
+        android:id="@+id/winLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/highscoreText"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2LongestStreakLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

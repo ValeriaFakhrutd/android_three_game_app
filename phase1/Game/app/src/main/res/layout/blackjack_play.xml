@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".level1.activities.BlackjackPlayActivity">
+
+    <TextView
+        android:id="@+id/dealerHandLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/dealer_hand_label"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerHandLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/player_hand_label"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/dealerHandLabel"
+        app:layout_constraintTop_toBottomOf="@+id/dealerHandLabel" />
+
+    <TextView
+        android:id="@+id/dealerHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/playerHandLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/dealerHandLabel"
+        app:layout_constraintTop_toBottomOf="@+id/dealerHandLabel" />
+
+    <TextView
+        android:id="@+id/playerHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/dealerHand"
+        app:layout_constraintTop_toBottomOf="@+id/playerHandLabel" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="219dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerHandLabel">
+
+        <Button
+            android:id="@+id/hitButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonClick"
+            android:text="@string/hit_button" />
+
+        <Button
+            android:id="@+id/standButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_weight="1"
+            android:onClick="buttonClick"
+            android:text="@string/stand_button" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/endGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="endGame"
+        android:text="@string/end_game_button_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="105dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:onClick="playAgain"
+        android:text="@string/play_again_button"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/endGameButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="231dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/endGameText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/blackjackNote"
+        android:layout_width="297dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="72dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/dealerHandLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

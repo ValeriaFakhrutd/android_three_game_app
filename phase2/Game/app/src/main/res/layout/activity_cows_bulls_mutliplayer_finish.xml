@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CowsBullsGame.activities.CowsBullsMutliplayerFinishActivity">
+
+    <TextView
+        android:id="@+id/player1Turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player1TurnsTaken"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/player2Turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/player2TurnsTaken"
+        app:layout_constraintEnd_toEndOf="@+id/player1Turn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/player1Turn"
+        app:layout_constraintTop_toBottomOf="@+id/player1Turn" />
+
+    <TextView
+        android:id="@+id/winMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="playAgain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <TextView
+        android:id="@+id/player1Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/player1TimeTaken"
+        app:layout_constraintEnd_toEndOf="@+id/player2Turn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/player2Turn"
+        app:layout_constraintTop_toBottomOf="@+id/player2Turn" />
+
+    <TextView
+        android:id="@+id/player2Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/player2TimeTaken"
+        app:layout_constraintEnd_toEndOf="@+id/player1Time"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/player1Time"
+        app:layout_constraintTop_toBottomOf="@+id/player1Time" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:onClick="menu"
+        android:text="@string/toMainMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="playAgain"
+        android:text="@string/play_again_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <TextView
+        android:id="@+id/player1TurnsTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player1Turn"
+        app:layout_constraintStart_toEndOf="@+id/player1Turn" />
+
+    <TextView
+        android:id="@+id/player2TurnsTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player2Turn"
+        app:layout_constraintEnd_toEndOf="@+id/player1TurnsTaken"
+        app:layout_constraintStart_toStartOf="@+id/player1TurnsTaken" />
+
+    <TextView
+        android:id="@+id/player1TimeTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player1Time"
+        app:layout_constraintEnd_toEndOf="@+id/player2TurnsTaken"
+        app:layout_constraintStart_toStartOf="@+id/player2TurnsTaken" />
+
+    <TextView
+        android:id="@+id/player2TimeTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player2Time"
+        app:layout_constraintEnd_toEndOf="@+id/player1TimeTaken"
+        app:layout_constraintStart_toStartOf="@+id/player1TimeTaken" />
+</androidx.constraintlayout.widget.ConstraintLayout>

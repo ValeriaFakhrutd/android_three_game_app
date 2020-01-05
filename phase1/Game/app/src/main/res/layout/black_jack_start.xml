@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".level1.activities.BlackjackStartActivity">
+
+    <TextView
+        android:id="@+id/blackjackBlurb"
+        android:layout_width="293dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="235dp"
+        android:text="@string/blackjack_blurb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="startGame"
+        android:text="@string/blackjack_start"
+        app:layout_constraintEnd_toEndOf="@+id/blackjackBlurb"
+        app:layout_constraintStart_toStartOf="@+id/blackjackBlurb"
+        app:layout_constraintTop_toBottomOf="@+id/blackjackBlurb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

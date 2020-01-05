@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsActivity">
+
+    <TextView
+        android:id="@+id/numHandsDialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="@string/longestStreak"
+        app:layout_constraintBottom_toTopOf="@+id/guessDialogue"
+        app:layout_constraintStart_toStartOf="@+id/guessDialogue" />
+
+    <TextView
+        android:id="@+id/guessDialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/fewGuess"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <TextView
+        android:id="@+id/quickestTimeDialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/quickTime"
+        app:layout_constraintStart_toStartOf="@+id/guessDialogue"
+        app:layout_constraintTop_toBottomOf="@+id/guessDialogue" />
+
+    <TextView
+        android:id="@+id/longestStreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/numHandsDialogue"
+        app:layout_constraintEnd_toEndOf="@+id/fewestGuess"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fewestGuess" />
+
+    <TextView
+        android:id="@+id/fewestGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/guessDialogue"
+        app:layout_constraintStart_toEndOf="@+id/guessDialogue" />
+
+    <TextView
+        android:id="@+id/quickestTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/quickestTimeDialogue"
+        app:layout_constraintEnd_toEndOf="@+id/fewestGuess"
+        app:layout_constraintStart_toStartOf="@+id/fewestGuess" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

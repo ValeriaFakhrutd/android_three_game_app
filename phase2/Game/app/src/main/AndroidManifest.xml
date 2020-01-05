@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.game">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GuessTheNumber.activities.GuessTheNumberSelectDifficultyActivity"></activity>
+        <activity android:name=".CowsBullsGame.activities.CowsBullsSelectDifficultyActivity" />
+        <activity android:name=".CowsBullsGame.activities.CowsBullsMutliplayerFinishActivity" />
+        <activity android:name=".CowsBullsGame.activities.CowsBullsMidMultiplayerActivity" />
+        <activity android:name=".service_activities.ScoreboardSelectActivity" />
+        <activity android:name=".service_activities.ScoreboardActivity" />
+        <activity android:name=".service_activities.BlackjackScoreboardActivity" />
+        <activity android:name=".service_activities.CowsBullsScoreboardActivity" />
+        <activity android:name=".service_activities.GuessTheNumberScoreBoardActivity" />
+        <activity android:name=".service_activities.ScoreboardTest" />
+        <activity android:name=".CowsBullsGame.activities.CowsBullsStartActivity" />
+        <activity android:name=".CowsBullsGame.activities.CowsBullsFinishActivity" />
+        <activity android:name=".CowsBullsGame.activities.CowsBullsActivity" />
+        <activity android:name=".service_activities.StatsActivity" />
+        <activity android:name=".service_activities.SettingsActivity" />
+        <activity android:name=".service_activities.OldAccountActivity" />
+        <activity android:name=".service_activities.NewAccountActivity" />
+        <activity android:name=".service_activities.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BlackjackGame.activities.EndGameActivity" />
+        <activity android:name=".BlackjackGame.activities.BlackjackPlayActivity" />
+        <activity android:name=".BlackjackGame.activities.BlackjackStartActivity" />
+        <activity android:name=".service_activities.MainActivity" />
+        <activity android:name=".GuessTheNumber.activities.GuessTheNumberStartActivity" />
+        <activity android:name=".GuessTheNumber.activities.GuessTheNumberPlayActivity" />
+        <activity android:name=".GuessTheNumber.activities.GuessTheNumberFinishActivity" />
+        <activity android:name=".BlackjackGame.activities.BlackjackMidMultiplayerActivity" />
+        <activity android:name=".BlackjackGame.activities.MultiplayerEndGameActivity" />
+        <activity android:name=".service_activities.StatsLocalScoreBoardActivity" />
+        <activity android:name=".GuessTheNumber.activities.GameMultiplayerFinishActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name ="android:background">@drawable/gradient_background
+        </item>
+        <item name="colorButtonNormal">#3c4f65</item>
+        <item name="android:buttonCornerRadius">10dp</item>
+    </style>
+<!--    <style name="ButtonsLight" parent="">-->
+<!--        <item name="android:textAppearance">@color/colorPrimary</item>-->
+
+<!--    </style>-->
+    <style name="ScoreboardRankNameText">
+        <item name="android:textColor">@color/highscoreText</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ScoreboardScoreText">
+        <item name="android:textColor">@color/highscoreText</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+</resources>

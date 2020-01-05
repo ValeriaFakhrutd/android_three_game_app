@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <SeekBar
+        android:id="@+id/numRoundsSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:max="10"
+        android:min="1"
+        android:progress="1"
+        app:layout_constraintStart_toStartOf="@+id/numHandsSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/numHandsSeekBar" />
+
+    <Switch
+        android:id="@+id/darkModeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/setting1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/setting_1_label"
+        app:layout_constraintBottom_toBottomOf="@+id/darkModeSwitch"
+        app:layout_constraintEnd_toStartOf="@+id/darkModeSwitch"
+        app:layout_constraintTop_toTopOf="@+id/darkModeSwitch" />
+
+    <TextView
+        android:id="@+id/setting3Label"
+        android:layout_width="138dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/setting_3_label"
+        app:layout_constraintBottom_toBottomOf="@+id/numRoundsSeekBar"
+        app:layout_constraintEnd_toStartOf="@+id/numRoundsSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/numRoundsSeekBar" />
+
+    <TextView
+        android:id="@+id/setting2Label"
+        android:layout_width="138dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/setting_2_label"
+        app:layout_constraintBottom_toBottomOf="@+id/numHandsSeekBar"
+        app:layout_constraintEnd_toStartOf="@+id/numHandsSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/numHandsSeekBar" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="119dp"
+        android:text="@string/settings"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/numHandsSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:max="10"
+        android:min="1"
+        android:progress="1"
+        app:layout_constraintStart_toStartOf="@+id/darkModeSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/darkModeSwitch" />
+
+    <TextView
+        android:id="@+id/numHandsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num_hands_minimum"
+        app:layout_constraintBottom_toTopOf="@+id/numHandsSeekBar"
+        app:layout_constraintEnd_toEndOf="@+id/numHandsSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/numHandsSeekBar" />
+
+    <TextView
+        android:id="@+id/numRoundsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/numRoundsSeekBar"
+        app:layout_constraintEnd_toEndOf="@+id/numRoundsSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/numRoundsSeekBar" />
+
+    <Switch
+        android:id="@+id/alphabetSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
+        app:layout_constraintStart_toEndOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="126dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/cbsetting"
+        app:layout_constraintEnd_toEndOf="@+id/setting3Label"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="@+id/setting3Label"
+        app:layout_constraintTop_toBottomOf="@+id/setting3Label" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="toMain"
+        android:text="@string/toMainMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

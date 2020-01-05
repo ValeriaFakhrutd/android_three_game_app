@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    tools:context=".service_activities.StartActivity">
+
+    <Button
+        android:id="@+id/oldUserButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:onClick="oldAccount"
+        android:text="@string/old_user_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/newUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="newAccount"
+        android:text="@string/new_user_button"
+        app:layout_constraintEnd_toEndOf="@+id/oldUserButton"
+        app:layout_constraintStart_toStartOf="@+id/oldUserButton"
+        app:layout_constraintTop_toBottomOf="@+id/oldUserButton" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="276dp"
+        android:layout_height="441dp"
+        android:layout_marginTop="64dp"
+        android:rotation="20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldUserButton"
+        app:srcCompat="@drawable/cow_1" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="116dp"
+        android:layout_height="241dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="64dp"
+        android:rotation="-14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/digit_4" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="251dp"
+        android:layout_height="307dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="456dp"
+        android:rotation="120"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cards" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="202dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:rotation="-25"
+        app:layout_constraintBottom_toTopOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bull" />
+
+    <TextView
+        android:id="@+id/multiplayerLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:text="@string/multiplayerLoginLabel"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
